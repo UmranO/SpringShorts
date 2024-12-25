@@ -1,5 +1,6 @@
 package com.cydeo.stereotype_annotation;
 
+import com.cydeo.bean_annotation.FullTimeMentor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -17,6 +18,9 @@ public class CydeApp {
 
         Selenium selenium = container.getBean(Selenium.class);
         selenium.getTeachingHours();
+
+        FullTimeMentor fullTimeMentor = container.getBean(FullTimeMentor.class);
+        fullTimeMentor.createAccount();
 
     }
 }
