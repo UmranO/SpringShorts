@@ -1,7 +1,10 @@
 package com.cydeo.stereotype_annotation;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Selenium {
-    public static void getTeachingHours(){
+    public void getTeachingHours(){
         System.out.println("Weekly teaching hours : " + 15);
     }
 }
